@@ -98,7 +98,7 @@ header h2 {
 
 /* Todo content Start */
 
-.todo-content .todo-list{
+.todo-content .todo-list {
     width: 40%;
     margin: auto;
     background-color: #ded8ff;
@@ -107,52 +107,53 @@ header h2 {
     border-radius: 8px;
 }
 
-.todo-list ul{
+.todo-list ul {
     padding-left: 0;
     list-style: none;
     font-size: 1rem;
     line-height: 1.2;
     margin: 0;
 }
-.todo-list ul li{
+.todo-list ul li {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
     padding-top: 0.75rem;
 }
-.todo-list ul li:first-child{
+.todo-list ul li:first-child {
     padding-top: 0;
 }
 
-.checkbox-parent, .task-remove-parent{
+.checkbox-parent,
+.task-remove-parent {
     width: 10%;
 }
 
-.task-remove-parent{
+.task-remove-parent {
     text-align: end;
 }
 
-.task-remove-parent .feather{
+.task-remove-parent .feather {
     width: 1.25rem;
     height: 1.25rem;
 }
 
-.checkbox-parent input[type="checkbox"]{
+.checkbox-parent input[type="checkbox"] {
     width: 1.25rem;
     height: 1.25rem;
     margin: 0;
 }
 
-.task-name-parent{
+.task-name-parent {
     width: 80%;
     font-size: 1rem;
 }
 
-.remove{
+.remove {
     cursor: pointer;
 }
 
-.task-name-parent.completed{
+.task-name-parent.completed {
     text-decoration: line-through;
 }
 
