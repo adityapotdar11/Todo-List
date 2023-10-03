@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo List</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <script src="./assets/js/jqBootstrapValidation.js"></script>
+    </head>
+    <body>
+        <header class="text-center">
+            <div class="container">
+                <h2>Todo List</h2>
+            </div>
+        </header>
+        <div class="container">
+            <div class="todo-heading">
+                <form class="add-todo-form" method="post" id="add-todo-form" novalidate>
+                    <div class="input-sec control-group">
+                        <div class="control">
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="todo-textbox"
+                                placeholder="Add tasks"
+                                required
+                                data-validation-required-message="Please enter task"
+                            />
+                            <div class="help-block"></div>
+                        </div>
+                    </div>
+                    <div class="submit-sec">
+                        <input type="submit" class="form-submit" value="Add" />
+                    </div>
+                </form>
+            </div>
+            <div class="todo-content">
+                <nav class="todo-list">
+                    <ul id="todo-list-ul">
+                        <li class="todo-element">
+                            <span class="checkbox-parent">
+                                <input type="checkbox" />
+                            </span>
+                            <span class="task-name-parent">
+                                This is first task.
+                            </span>
+                            <span class="task-remove-parent">
+                                <a class="remove"><i data-feather="x-circle"></i></a>
+                            </span>
+                        </li>
+                        <li class="todo-element">
+                            <span class="checkbox-parent">
+                                <input type="checkbox" />
+                            </span>
+                            <span class="task-name-parent">
+                                This is second task.
+                            </span>
+                            <span class="task-remove-parent">
+                                <a class="remove"><i data-feather="x-circle"></i></a>
+                            </span>
+                        </li>
+                        <li class="todo-element">
+                            <span class="checkbox-parent">
+                                <input type="checkbox" />
+                            </span>
+                            <span class="task-name-parent">
+                                This is third task.
+                            </span>
+                            <span class="task-remove-parent">
+                                <a class="remove"><i data-feather="x-circle"></i></a>
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>

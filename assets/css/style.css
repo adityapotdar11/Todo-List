@@ -1,0 +1,159 @@
+/* Global CSS Start */
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.125;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Global CSS End */
+
+/* Header Section Start */
+
+header {
+    padding: 0.5rem 0;
+}
+
+header h2 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    color: #222222;
+}
+
+/* Header Section end */
+
+/* Add Todo Form Start */
+
+.add-todo-form {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: auto;
+    padding: 1.7rem 1rem 1.7rem 1rem;
+    background-color: #ded8ff;
+    border-radius: 8px;
+    margin-top: 1rem;
+    min-height: 20vh;
+}
+.input-sec {
+    width: 75%;
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    border: 1.5px solid #858585;
+    border-radius: 8px;
+    color: #222222;
+}
+.form-control:focus-visible {
+    outline: none;
+}
+
+.form-submit {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1.125rem;
+    line-height: 1.2;
+    background-color: blue;
+    color: #ffffff;
+    border: 1.5px solid blue;
+    outline: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.help-block ul {
+    font-size: 0.8rem;
+    margin: 0.5rem 0 0 0;
+    list-style: none;
+    padding-left: 0;
+    color: red;
+}
+
+/* Add Todo Form End */
+
+/* Todo content Start */
+
+.todo-content .todo-list{
+    width: 40%;
+    margin: auto;
+    background-color: #ded8ff;
+    padding: 1rem;
+    margin-top: 1.25rem;
+    border-radius: 8px;
+}
+
+.todo-list ul{
+    padding-left: 0;
+    list-style: none;
+    font-size: 1rem;
+    line-height: 1.2;
+    margin: 0;
+}
+.todo-list ul li{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-top: 0.75rem;
+}
+.todo-list ul li:first-child{
+    padding-top: 0;
+}
+
+.checkbox-parent, .task-remove-parent{
+    width: 10%;
+}
+
+.task-remove-parent{
+    text-align: end;
+}
+
+.task-remove-parent .feather{
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.checkbox-parent input[type="checkbox"]{
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0;
+}
+
+.task-name-parent{
+    width: 80%;
+    font-size: 1rem;
+}
+
+.remove{
+    cursor: pointer;
+}
+
+.task-name-parent.completed{
+    text-decoration: line-through;
+}
+
+/* Todo content End */
