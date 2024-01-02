@@ -158,3 +158,28 @@ header h2 {
 }
 
 /* Todo content End */
+
+/* Media query Start */
+
+@media screen and (max-width: 767px) {
+    .add-todo-form {
+        width: 80%;
+        flex-wrap: wrap;
+        gap: 0rem;
+    }
+
+    .input-sec {
+        width: 95%;
+        margin-bottom: -15px;
+    }
+
+    .submit-sec {
+        width: 100%;
+        text-align: center;
+    }
+    .todo-content .todo-list {
+        width: 80%;
+    }
+}
+
+/* Media query End */
